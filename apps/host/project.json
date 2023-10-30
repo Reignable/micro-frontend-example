@@ -5,6 +5,7 @@
   "prefix": "micro-frontend-example",
   "sourceRoot": "apps/host/src",
   "tags": [],
+  "implicitDependencies": ["about", "shop", "cart"],
   "targets": {
     "build": {
       "executor": "@nx/angular:webpack-browser",
@@ -93,6 +94,13 @@
           "ci": true,
           "codeCoverage": true
         }
+      }
+    },
+    "deploy": {
+      "executor": "nx:run-commands",
+      "outputs": [],
+      "options": {
+        "command": "rm -rf production && mkdir production && cp -r dist/apps/host/* production && cp -r dist/apps/shop production && cp -r dist/apps/about production && cp -r dist/apps/cart production && http-server -p 3000 -a localhost production"
       }
     }
   }
