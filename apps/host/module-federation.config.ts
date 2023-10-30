@@ -2,7 +2,7 @@ import { ModuleFederationConfig } from '@nx/webpack';
 
 const config: ModuleFederationConfig = {
   name: 'host',
-  remotes: [],
+  remotes: ['shop', 'cart', 'about'],
 };
 
 export default config;
