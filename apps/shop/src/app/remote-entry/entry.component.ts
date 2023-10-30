@@ -2,6 +2,6 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'micro-frontend-example-shop-entry',
-  template: `<micro-frontend-example-nx-welcome></micro-frontend-example-nx-welcome>`,
+  template: `<h1>This is the shop</h1>`,
 })
 export class RemoteEntryComponent {}

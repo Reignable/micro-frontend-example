@@ -64,7 +64,8 @@
           "browserTarget": "host:build:production"
         },
         "development": {
-          "browserTarget": "host:build:development"
+          "browserTarget": "host:build:development",
+          "devRemotes": ["shop", "about", "cart"]
         }
       },
       "defaultConfiguration": "development"

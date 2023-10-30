@@ -10,5 +10,6 @@ import { remoteRoutes } from './entry.routes';
   declarations: [RemoteEntryComponent, NxWelcomeComponent],
   imports: [CommonModule, RouterModule.forChild(remoteRoutes)],
   providers: [],
+  exports: [RemoteEntryComponent],
 })
 export class RemoteEntryModule {}
